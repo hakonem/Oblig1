@@ -44,11 +44,13 @@ public class Oblig1Oppgave2 {
 
     // beregn og skriv ut total pris for alle varer i System.out
         double totalPris1 = vare1.beregnTotalPris(vare1.getPris(), vare1.getAntall());
-        System.out.println("Vare 1: "+vare1.getNavn()+"\nAntall: "+vare1.getAntall()+"\nPris: "+vare1.getPris());
-        System.out.println("Totalpris på vare 1 er: "+totalPris1);
+        String totalPris1Med2Desimaler = String.format("%.2f", totalPris1);
+        System.out.println("Vare 1: "+vare1.getNavn()+"\nAntall: "+vare1.getAntall()+"\nPris (kr.): "+vare1.getPris());
+        System.out.println("Totalpris på vare 1 er: "+totalPris1Med2Desimaler+" kr.");
 
         double totalPris2 = vare2.beregnTotalPris(vare2.getPris(), vare2.getAntall());
-        System.out.println("Vare 2: "+vare2.getNavn()+"\nAntall: "+vare2.getAntall()+"\nPris: "+vare2.getPris());
-        System.out.println("Totalpris på vare 2 er: "+totalPris2);
+        String totalPris2Med2Desimaler = String.format("%.2f", totalPris2);
+        System.out.println("Vare 2: "+vare2.getNavn()+"\nAntall: "+vare2.getAntall()+"\nPris (kr.): "+vare2.getPris());
+        System.out.println("Totalpris på vare 2 er: "+totalPris2Med2Desimaler+" kr.");
     }
 }
