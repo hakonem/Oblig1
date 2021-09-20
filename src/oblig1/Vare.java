@@ -43,8 +43,7 @@ public class Vare {
         }
 
         //metode for å beregne totalpris (pris * antall)
-        public double beregnTotalPris(double pris, int antall) {
-            double totalPris = pris * antall;
-            return totalPris;
+        double beregnTotalPris(double pris, int antall) {
+            return pris * antall;
         }
 }

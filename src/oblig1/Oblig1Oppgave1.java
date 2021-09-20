@@ -15,15 +15,16 @@ public class Oblig1Oppgave1 {
        Tips : String.format("%.2f",desimalverdi); for å formatere to desimaler
     */
         double areal = Sirkel.beregnAreal(radius);
-        double omkrets = Sirkel.beregnOmkrets(radius);
-        double diameter = Sirkel.beregnDiameter(radius);
-        String arealMedToDesimaler = String.format("%.2f", areal);
-        String omkretsMedToDesimaler = String.format("%.2f", omkrets);
-        String diameterMedToDesimaler = String.format("%.2f", diameter);
+        String arealToDesimaler = String.format("%.2f", areal);
+        System.out.println("Arealet av sirkelen med radius " + radius + " er " + arealToDesimaler);
 
-        System.out.println("Arealet av sirkelen med radius" + " " + radius + " er " + arealMedToDesimaler + "\n" +
-            "Omkretsen av sirkelen med radius " + radius  + " er " +  omkretsMedToDesimaler + "\n" +
-            "Diameteren til sirkelen med radius " + radius + " er " + diameterMedToDesimaler);
+        double omkrets = Sirkel.beregnOmkrets(radius);
+        String omkretsToDesimaler = String.format("%.2f", omkrets);
+        System.out.println("Omkretsen av sirkelen med radius " + radius  + " er " +  omkretsToDesimaler);
+
+        double diameter = Sirkel.beregnDiameter(radius);
+        String diameterToDesimaler = String.format("%.2f", diameter);
+        System.out.println("Diameteren til sirkelen med radius " + radius + " er " + diameterToDesimaler);
 
     }
 }
